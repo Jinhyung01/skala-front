@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이진형의 Hub</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="script/upDown.js" defer></script>
+    <script src="script/grade.js" defer></script>
+    <script src="script/bag.js" defer></script>
+    <script type="module" src="script/realtimeInfo.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>이진형의 개인 공간 (Hub) 🌟</h1>
+            <p>환영합니다! 이곳은 이진형의 개인 공간입니다.</p>
+        </header>
+
+        <hr>
+
+        <nav>
+            <h2>📂 바로가기 메뉴</h2>
+            <ul>
+                <li><a href="myProfile.html">소개 (Profile)</a></li>
+                <li><a href="myClass.html">수업 시간표 (Class)</a></li>
+                <li><a href="myHoliday.html">휴일 계획 (Holiday)</a></li>
+                <li><a href="myTrip.html">여행 앨범 (Album)</a></li>
+                <li><a href="signUp.html">회원 가입 (Sign Up)</a></li>
+            </ul>
+        </nav>
+
+        <hr>
+
+        <div class="content-layout">
+            <main>
+                <h2>🔥 오늘의 다짐 🔥</h2>
+
+            <h3>오늘의 한 줄 목표</h3>
+            <ul>
+                <li>just do it!!</li>
+            </ul>
+            <h3>오늘의 실천 계획</h3>
+            <ul>
+                <li>HTML 정복하기</li>
+                <li>CSS 정복하기</li>
+            </ul>
+            <br>
+
+            <h3>📚 이진형의 추천 도서</h3>
+            <p><strong>[CS/전공] Operating System Concepts (일명 공룡책)</strong></p>
+            <p>컴퓨터 공학 전공자라면 누구나 거쳐 가는 운영체제의 교과서이자 바이블입니다. 프로세스, 메모리 관리, 가상 메모리 등 컴퓨터 하드웨어와 소프트웨어가 내부적으로 어떻게 소통하고 작동하는지 핵심
+                원리를 깊이 있게 설명해 줍니다. 제대로 된 실력파 개발자가 되고 싶다면 꼭 한 번 도전해봐야 할 필독서로 강력 추천합니다!</p>
+            <p>작성일: 2026년 7월 15일</p>
+
+
+            <br>
+
+            </main>
+
+            <aside>
+                <h2>💡 정보</h2>
+                <div class="info-list">
+                    <p class="info-item">
+                        <strong>📍 현재 위치</strong>
+                        <span>대한상공회의소</span>
+                    </p>
+                    <p class="info-item">
+                        <strong>💻 관심 기술 스택</strong>
+                        <span>HTML & CSS & JavaScript</span>
+                    </p>
+                    <p class="info-item">
+                        <strong>🔗 참고 사이트</strong>
+                        <a href="https://www.w3schools.com/" target="_blank">W3Schools 실습 사이트</a>
+                    </p>
+                </div>
+
+                <section class="weather-widget">
+                    <h3>🌤️ 실시간 날씨</h3>
+                    <label for="citySelect">도시 선택</label>
+                    <select id="citySelect">
+                        <option value="">도시를 선택하세요</option>
+                        <option value="gwangju">광주</option>
+                        <option value="ulsan">울산</option>
+                        <option value="pangyo">판교</option>
+                    </select>
+                    <div id="weather-box">도시를 선택하면 현재 날씨가 표시됩니다.</div>
+                </section>
+
+                <section class="tool-card updown-game">
+                    <h3>진형이의 Up-Down</h3>
+                    <p>컴퓨터가 고른 <strong>1~50</strong> 사이의 숫자를 맞혀보세요.</p>
+                    <button type="button" id="startGame" class="tool-button">게임 시작</button>
+                    <div id="gameStatus" class="tool-result game-status" aria-live="polite">아직 도전 기록이 없습니다.</div>
+                </section>
+
+                <section class="tool-card grade-calculator">
+                    <h3>프론트엔드 성적 계산기</h3>
+                    <p>HTML, CSS, JavaScript 점수로 평균과 합격 여부를 계산합니다.</p>
+                    <button type="button" id="calculateGrade" class="tool-button">성적 계산하기</button>
+                    <div id="gradeResult" class="tool-result grade-result" aria-live="polite">아직 계산한 성적이 없습니다.</div>
+                </section>
+
+                <section class="tool-card bag-viewer">
+                    <h3>진형이의 수업 가방</h3>
+                    <p>오늘 수업을 위해 챙긴 소지품을 확인해 보세요.</p>
+                    <button type="button" id="showBag" class="tool-button">내 가방 보기</button>
+                    <div id="bagResult" class="tool-result bag-result" aria-live="polite">아직 가방을 열어보지 않았습니다.</div>
+                </section>
+            </aside>
+        </div>
+
+        <hr>
+
+        <footer>
+            <p>이메일 문의: <a href="mailto:dlwls7405@naver.com">dlwls7405@naver.com</a></p>
+            <p>&copy; 2026 이진형 포트폴리오</p>
+        </footer>
+    </div>
+</body>
+
+</html>
